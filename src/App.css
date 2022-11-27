@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body {
+    height: 100vh;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.register-form {
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-field{
+    width: 100%;
+    height: 40px;
+    align-self: center;
+    background: lightblue;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-field:focus{
+    border:2px solid cadetblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.form-field{
+    background: darkcyan;
+    padding:0;
+}
+
+.success-message{
+    background: darkcyan;
+    width: 100%;
+    height: 40px;
+    align-self: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+.error-message{
+    color: red;
+    font-size: 14px;
 }
